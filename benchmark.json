@@ -1,0 +1,60 @@
+{
+  "device": "cpu",
+  "epochs": 3,
+  "adversarial_epochs": 2,
+  "results": [
+    {
+      "module": "mnist",
+      "model": "baseline",
+      "epsilon": 0.15,
+      "baseline_train_seconds": 41.49562072753906,
+      "defended_train_seconds": 68.6694827079773,
+      "clean_accuracy": 0.9725,
+      "fgsm_accuracy": 0.3905,
+      "pgd_accuracy": 0.2015,
+      "fgsm_attack_success_rate": 0.5984575835475578,
+      "pgd_attack_success_rate": 0.7928020565552699,
+      "test_samples": 2000
+    },
+    {
+      "module": "mnist",
+      "model": "defended",
+      "epsilon": 0.15,
+      "baseline_train_seconds": 41.49562072753906,
+      "defended_train_seconds": 68.6694827079773,
+      "clean_accuracy": 0.981,
+      "fgsm_accuracy": 0.8505,
+      "pgd_accuracy": 0.845,
+      "fgsm_attack_success_rate": 0.13302752293577982,
+      "pgd_attack_success_rate": 0.13863404689092762,
+      "test_samples": 2000
+    },
+    {
+      "module": "gtsrb",
+      "model": "baseline",
+      "epsilon": 0.03,
+      "baseline_train_seconds": 60.792333364486694,
+      "defended_train_seconds": 67.2594621181488,
+      "clean_accuracy": 0.422,
+      "fgsm_accuracy": 0.064,
+      "pgd_accuracy": 0.069,
+      "fgsm_attack_success_rate": 0.8483412322274881,
+      "pgd_attack_success_rate": 0.8364928909952607,
+      "test_samples": 2000
+    },
+    {
+      "module": "gtsrb",
+      "model": "defended",
+      "epsilon": 0.03,
+      "baseline_train_seconds": 60.792333364486694,
+      "defended_train_seconds": 67.2594621181488,
+      "clean_accuracy": 0.464,
+      "fgsm_accuracy": 0.2065,
+      "pgd_accuracy": 0.2125,
+      "fgsm_attack_success_rate": 0.5549568965517241,
+      "pgd_attack_success_rate": 0.5420258620689655,
+      "test_samples": 2000
+    }
+  ],
+  "warning": "Measured on selected subsets; not a certified robustness or physical-world safety evaluation."
+}
